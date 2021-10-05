@@ -11,6 +11,7 @@ body {
   display: flex;
   background: lightgray;
   color: lightslategray;
+  height: 5vh;
 }
 
 .grid{
@@ -33,17 +34,18 @@ color:#fff;
 
 }
 
-span{
-  transform: rotate(70deg);
-  -webkit-transform: rotate(70deg);
-  /* ??? */
-}
 
 #date{
   font-size: 30px;
 
 }
 
+#rotate{
+    font-size: 50px;
+    transform: rotateX(180deg);
+    /* ???? */
+
+}
 
 .items:nth-child(2){
 height: 80vh;
@@ -113,3 +115,4 @@ color: black;
  
   
 }
+
