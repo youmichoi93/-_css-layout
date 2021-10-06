@@ -7,112 +7,100 @@ body {
 }
 
 
-.header{
-  display: flex;
-  background: lightgray;
-  color: lightslategray;
-  height: 5vh;
-}
-
 .grid{
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: repeat(3, 2fr);
+  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px;
 }
 
-.items{
-height: 40vh;
-
-}
-
-.items:first-child{
-grid-row: 1 / span 1; 
-background: black;
-color:#fff;
- text-transform: uppercase;
- font-size: 40px;
-
-}
-
-
-#date{
-  font-size: 30px;
-
-}
-
-#rotate{
-    font-size: 50px;
-    transform: rotateX(180deg);
-    /* ???? */
-
-}
-
-.items:nth-child(2){
-height: 80vh;
-grid-row: 2 / span 2; 
-grid-column: 1 / span 1;
-background: #FF1502;
-color:black;
-font-size: 30px;
-}
-.items:nth-child(3){
-
-grid-row: 1 / span 2; 
-grid-column: 2 / span 1;
-background: #6C01FF;
-color: #fff
-}
-
-.items:nth-child(4){
-grid-row: 2 / span 1; 
-grid-column: 2 / span 1;
-background: #fff;
-
-}
-
-.items:nth-child(5){
-grid-row: 3 / span 2; 
-grid-column: 2 / span 1;
-background:#FFC904;
-color: black;
-font-size: 30px;
-font-weight: bold;
-}
-
-
-/* 오른쪽칸 리스트업 */
-
-.items:nth-child(6){
-height: 120vh;
-grid-row: 1 / span 1; 
-grid-row-start: 1;
-grid-row-end: -1;
-background: #fff;
-color: black;
-
-}
-.items:nth-child(7){
-height: 120vh;
-grid-row: 1 / span 1; 
-grid-row-start: 1;
-grid-row-end: -1;
-background: #fff;
-color: black;
-
-}
-
-.content{
-  font-style:italic;
-  font-weight:bold;
-  font-size: 20px;
-
-}
-
-.title{
-  font-weight:bold;
-  font-size: 25px;
-  margin-bottom: 20px;
- 
+.top{
+  background: yellow;
+  color: black;
+  border:1px solid red;
+  grid-column: 1 / -1;
   
 }
 
+.right{
+  background: greenyellow;
+  color: #fff;
+  border:1px solid black;
+  grid-row: 2 / 4;
+  grid-column: 4/ -1;
+  writing-mode: vertical-lr;
+}
+
+.right-bottom{
+  background: greenyellow;
+  color: #fff;
+  border:1px solid black;
+  grid-row: 4 / 6;
+  grid-column: 4/ -1;
+  writing-mode: vertical-lr;
+}
+
+
+.left{
+  background: peru;
+  color: #fff;
+  border:1px solid black;
+  grid-row: 2 / 4;
+  grid-column: 1/ 2;
+  writing-mode: vertical-lr;
+}
+
+.left-mid{
+  background: peru;
+  color: #fff;
+  border:1px solid black;
+  grid-row: 4 / 5;
+  grid-column: 1/ 2;
+  writing-mode: vertical-lr;
+}
+
+
+.left-bottom{
+  background: peru;
+  color: #fff;
+  border:1px solid black;
+  grid-row: 5 / 6;
+  grid-column: 1/ 2;
+  writing-mode: vertical-lr;
+}
+
+.bottom{
+  background: pink;
+  color: #fff;
+  border:1px solid black;
+  grid-column: 1/ -1;
+ 
+}
+
+.imageFlex{
+  display: grid;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: stretch;
+
+  
+}
+
+
+
+.imageFlex:first-child{
+
+  grid-row: 2 / span 2;
+  grid-column: 2/ span 2;
+  
+
+
+}
+
+.imageFlex:nth-child(2){
+  
+   grid-row: 3 / span 2;
+  grid-column: 2/ span 2;
+   display: flex;
+
+  
+}
