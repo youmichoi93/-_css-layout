@@ -36,6 +36,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+ /* 글자와 레이아웃 간격 띄우기 */
   padding: 15px;
 }
 
