@@ -46,7 +46,7 @@ header{
   font-weight: bold;
   display: flex;
   align-items: flex-end;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 .religion{
