@@ -1,0 +1,53 @@
+body{
+  padding: 20px;
+  font-family: 'Itim', cursive;
+  background: #E8EAE7;
+  /* 화면 너비 유동적 */
+  width: 100%;
+  margin: 5px auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  color: #fff;
+
+}
+
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+div:first-child,
+div:nth-child(2),
+div:nth-child(3){
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 48px;
+  background: #94987D;
+
+
+}
+
+div:nth-child(4),
+div:nth-child(7){
+  background: #F0CAB7;
+}
+
+div:nth-child(5),
+div:nth-child(6){
+  background: rgb(249, 244, 242);
+  color: black
+}
+
+#sec{
+  background: #776561;
+}
+
+#thi{
+  background: #D07C60;
+
+}
