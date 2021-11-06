@@ -8,7 +8,6 @@ body {
   width: 100%;
   margin:0 auto;
 }
-
 .memo {
   box-shadow: 5px 5px 10px 0px #CAC2D1;
   height: 1200px;
@@ -54,7 +53,6 @@ body {
   /* align-content:flex-end; */
   align-items: center;
 }
-
 .text {
   display: flex;
   flex-flow: column wrap;
